@@ -8,3 +8,9 @@ from rest_framework import generics
 class ProductAPIView(generics.ListAPIView):
     queryset = Product.objects.all().order_by('-published_date')
     serializer_class = ProductSerializer
+
+class ProductDetailAPIView(generics.ListAPIView):
+    id=1
+    queryset = Product.objects.filter(id=id)
+    print(queryset)
+    serializer_class = ProductSerializer
