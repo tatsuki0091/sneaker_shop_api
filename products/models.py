@@ -5,6 +5,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.IntegerField()
     text = models.TextField()
+    quantity = models.IntegerField()
     img_path = models.CharField(max_length=300, null=True)
     condition_code = models.IntegerField()
     insert_date = models.DateTimeField(
