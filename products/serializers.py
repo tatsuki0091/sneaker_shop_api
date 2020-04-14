@@ -10,6 +10,7 @@ class ProductSerializer(serializers.ModelSerializer):
             'id',
             'name',
             'img_path',
+            'quantity',
             'price',
             'text',
             'condition_code',
