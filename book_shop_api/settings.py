@@ -21,7 +21,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 
-    'api.apps.ApiConfig', # 追加
     # 3rd party
     'rest_framework', # 追加
     'django.contrib.admin',
@@ -32,8 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products.apps.ProductsConfig',
     'members.apps.MembersConfig',
-    'corsheaders'                    #追加行
-    
+    'corsheaders',                    #追加行
+    'debug_toolbar',    
 ]
 
 MIDDLEWARE = [
@@ -46,6 +45,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',                   #追加行
     'django.middleware.common.CommonMiddleware',               #追加行
+    'debug_toolbar.middleware.DebugToolbarMiddleware', #←追加
 ]
 
 ROOT_URLCONF = 'book_shop_api.urls'
@@ -106,6 +106,19 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
 )
 
+# debug-tool-barで表示するパネル一覧、設定しなければ全て表示
+DEBUG_TOOLBAR_PANELS = (
+    'debug_toolbar.panels.versions.VersionsPanel',
+    'debug_toolbar.panels.timer.TimerPanel',
+    'debug_toolbar.panels.settings.SettingsPanel',
+    'debug_toolbar.panels.headers.HeadersPanel',
+    'debug_toolbar.panels.request.RequestPanel',
+    'debug_toolbar.panels.sql.SQLPanel',
+    'debug_toolbar.panels.templates.TemplatesPanel',
+    'debug_toolbar.panels.staticfiles.StaticFilesPanel',
+)
+
+INTERNAL_IPS = ['127.0.0.1']
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -125,3 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+DEBUG_TOOLBAR_CONFIG = {
+        'INTERCEPT_REDIRECTS': False,
+    }
