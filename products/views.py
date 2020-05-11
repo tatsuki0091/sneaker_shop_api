@@ -20,8 +20,8 @@ class ProductAPIView(generics.ListAPIView):
     queryset = Product.objects.all().order_by('-published_date')
     serializer_class = ProductSerializer
 
-class GetInfoForCrouselAPIView(APIView):
-    queryset = Product.objects.all().order_by('-published_date')
+class GetInfoForCrouselAPIView(generics.ListAPIView):
+    queryset = Product.objects.all().order_by('?')[:CROUSEL_NUM]
     serializer_class = ProductSerializer
 
 # 検索結果を表示

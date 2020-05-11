@@ -2,12 +2,10 @@ from django.conf.urls import url
 from django.urls import path, re_path
 from rest_framework import routers
 
-from .views import {
-    ProductAPIView, 
-    ProductDetailAPIView, 
-    SearchProductsAPIView,
-    GetInfoForCrouselAPIView
-}
+from .views import ProductAPIView
+from .views import ProductDetailAPIView
+from .views import SearchProductsAPIView
+from .views import GetInfoForCrouselAPIView
 
 router = routers.DefaultRouter()
 router.register('', ProductAPIView)
