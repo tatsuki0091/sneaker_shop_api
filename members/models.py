@@ -7,8 +7,8 @@ class Member(models.Model):
     mail_address = models.CharField(max_length=200)
     prefecture = models.IntegerField()
     address1 = models.TextField()
-    address2 = models.IntegerField()
-    phone_number = models.IntegerField()
+    address2 = models.CharField(max_length=100)
+    phone_number = models.CharField(max_length=11)
     password = models.CharField(max_length=100)
     insert_date = models.DateTimeField(
             default=timezone.now)
