@@ -15,6 +15,7 @@ class Member(models.Model):
     update_date = models.DateTimeField(
             default=timezone.now, null=True)
 
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()
