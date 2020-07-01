@@ -1,1 +1,9 @@
 *.log
+book_shop_api/__pycache__/settings.cpython-37.pyc
+members/__pycache__/middleware.cpython-37.pyc
+members/__pycache__/models.cpython-37.pyc
+members/__pycache__/serializers.cpython-37.pyc
+members/__pycache__/urls.cpython-37.pyc
+members/__pycache__/views.cpython-37.pyc
+members/migrations/__pycache__/0003_auto_20200603_1113.cpython-37.pyc
+products/__pycache__/views.cpython-37.pyc
