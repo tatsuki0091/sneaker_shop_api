@@ -4,7 +4,7 @@ from django.utils import timezone
 class Member(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    mail_address = models.CharField(max_length=200)
+    mail_address = models.EmailField(max_length=200, unique=True)
     prefecture = models.IntegerField()
     address1 = models.TextField()
     address2 = models.CharField(max_length=100)
@@ -14,6 +14,7 @@ class Member(models.Model):
             default=timezone.now)
     update_date = models.DateTimeField(
             default=timezone.now, null=True)
+
 
     def publish(self):
         self.published_date = timezone.now()

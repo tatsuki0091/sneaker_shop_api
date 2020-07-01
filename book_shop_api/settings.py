@@ -33,6 +33,12 @@ INSTALLED_APPS = [
     'members.apps.MembersConfig',
     'corsheaders',                    #追加行
     'debug_toolbar',    
+    'django.contrib.sites',
+    'rest_framework.authtoken',
+    'allauth',
+    'allauth.account',
+    'rest_auth',
+    'rest_auth.registration',
 ]
 
 MIDDLEWARE = [
@@ -46,6 +52,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',                   #追加行
     'django.middleware.common.CommonMiddleware',               #追加行
     'debug_toolbar.middleware.DebugToolbarMiddleware', #←追加
+    'members.middleware.SampleMiddleware',
 ]
 
 ROOT_URLCONF = 'book_shop_api.urls'
@@ -117,6 +124,23 @@ DEBUG_TOOLBAR_PANELS = (
     'debug_toolbar.panels.templates.TemplatesPanel',
     'debug_toolbar.panels.staticfiles.StaticFilesPanel',
 )
+
+REST_FRAMEWORK = {
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
+    # 'DEFAULT_AUTHENTICATION_CLASSES': [ # 追加
+    #     'rest_framework.authentication.SessionAuthentication',
+    #     'rest_framework.authentication.BasicAuthentication',
+    # ],
+}
+
+# SITE_ID = 1
+
+# JWT_AUTH = {
+#     # トークンの期限を無効に設定
+#     'JWT_VERIFY_EXPIRATION': False,
+# }
 
 INTERNAL_IPS = ['127.0.0.1']
 

@@ -1,0 +1,837 @@
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:root:post後
+INFO:root:is_valid
+ERROR:django.request:Internal Server Error: /member_api/create
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:root:post後
+INFO:root:is_valid
+ERROR:django.request:Internal Server Error: /member_api/create
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/projects/django/book_shop_api/members/views.py", line 20, in post
+    return Response(serializer.data)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 256, in data
+    raise AssertionError(msg)
+AssertionError: When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+You should either call `.is_valid()` first, or access `.initial_data` instead.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:root:post後
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:root:post後
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:root:post前
+INFO:root:post後
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:post前
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Bad Request: /member_api/jwt-token
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Bad Request: /member_api/jwt-token
+WARNING:django.request:Not Found: /member_api/jwt-token/
+INFO:root:ddd
+WARNING:django.request:Unauthorized: /product_api/
+WARNING:django.request:Unauthorized: /product_api/getFive
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Method Not Allowed: /member_api/jwt-token
+WARNING:django.request:Method Not Allowed: /rest-auth/login/
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Not Found: /member-api/auth/
+WARNING:django.request:Not Found: /member_api/auth/
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 278, in get_permissions
+    return [permission() for permission in self.permission_classes]
+TypeError: 'BasePermissionMetaclass' object is not iterable
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 278, in get_permissions
+    return [permission() for permission in self.permission_classes]
+TypeError: 'BasePermissionMetaclass' object is not iterable
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+TypeError: 'str' object is not callable
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/Tatsuki/projects/django/book_shop_api/members/views.py", line 32, in get_queryset
+    return null
+NameError: name 'null' is not defined
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+TypeError: 'Response' object is not callable
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/template/response.py", line 119, in __iter__
+    'The response content must be rendered before it can be iterated over.'
+django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Member' object has no attribute 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `email` on serializer `MemberAuthSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Member` instance.
+Original exception text was: 'Member' object has no attribute 'email'.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:ddd
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 554, in get_raw_data_form
+    serializer = view.get_serializer()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/renderers.py", line 554, in get_raw_data_form
+    serializer = view.get_serializer()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'MemberAuthentocateAPIView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+WARNING:django.request:Method Not Allowed: /member_api/auth
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:<rest_framework.request.Request object at 0x1052a60d0>
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:<QueryDict: {'csrfmiddlewaretoken': ['tOu10gi5yBYa0TLzd9zuIksVvD3ZNrF45cVnyjkfNkzwEX5xGh3Cigz86QMiZEbY'], 'mail_address': ['tttt@tttt.com'], 'password': ['aassddff']}>
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/projects/django/book_shop_api/members/views.py", line 32, in post
+    logging.info(request.data.mail_address)
+AttributeError: 'QueryDict' object has no attribute 'mail_address'
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'mail_address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/projects/django/book_shop_api/members/views.py", line 32, in post
+    logging.info(request.mail_address)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/request.py", line 411, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'mail_address'
+INFO:root:ddd
+ERROR:django.request:Internal Server Error: /member_api/auth
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'mail_address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/Tatsuki/projects/django/book_shop_api/members/views.py", line 32, in post
+    logging.info(request.mail_address)
+  File "/Users/Tatsuki/anaconda3/envs/book_shop_api/lib/python3.7/site-packages/rest_framework/request.py", line 411, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'mail_address'
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:tttt@tttt.com
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:ddd
+INFO:root:sJ2MioqDjQcKkdkI84y0m1N8SXokSWZ447t8QrsNyzN6YhEGBc28WXUlta7D49vY
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+WARNING:django.request:Method Not Allowed: /member_api/auth
+WARNING:django.request:Not Found: /favicon.ico
+INFO:root:ddd
+INFO:root:None
+INFO:root:MT2Awm7pJL0OcycAQr1d3cNoE21GvqDWohtW4p9zYuBaQCwyjzvlD8UBffKZHD9Q
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/views.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/models.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/models.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/models.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/models.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:root:middleware
+WARNING:django.request:Forbidden: /member_api/auth
+INFO:django.utils.autoreload:/Users/Tatsuki/projects/django/book_shop_api/members/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
