@@ -17,10 +17,10 @@ class SampleMiddleware(object):
         return response
 
     def process_request(self, request):
-        print("リクエスト")
-        logfile = r"/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/development.log"
-        logging.basicConfig(filename=logfile,level=logging.DEBUG)
-        logging.info("middleware")
+        if 'user_id' not in request.session:
+            print('uuuu')
+
+        
     
     def process_response(self, request, response):
         print("レスポンス")

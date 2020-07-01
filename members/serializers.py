@@ -45,3 +45,13 @@ class MemberSerializer(serializers.ModelSerializer):
 class MemberAuthSerializer(serializers.Serializer):
     mail_address = serializers.EmailField()
     password = serializers.CharField(max_length=200)
+
+class GetMemberInfoSerializer(serializers.Serializer):
+    first_name = serializers.CharField(max_length=200)
+    last_name = serializers.CharField(max_length=200)
+    mail_address = serializers.EmailField()
+    prefecture = serializers.IntegerField()
+    address1 = serializers.CharField(max_length=200)
+    address2 = serializers.CharField(max_length=200)
+    phone_number = serializers.CharField()
+
