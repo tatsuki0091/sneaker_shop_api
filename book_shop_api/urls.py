@@ -9,6 +9,7 @@ urlpatterns = [
     url('admin/', admin.site.urls),
     url('product_api/', include('products.urls')), # 追加
     url('member_api/', include('members.urls')), # 追加
+    url('cart_api/', include('carts.urls')), # 追加
 ]
 
 
