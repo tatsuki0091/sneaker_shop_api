@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products.apps.ProductsConfig',
     'members.apps.MembersConfig',
+    'carts.apps.CartsConfig',
     'corsheaders',                    #追加行
     'debug_toolbar',    
     'django.contrib.sites',
@@ -125,6 +126,8 @@ DEBUG_TOOLBAR_PANELS = (
     'debug_toolbar.panels.staticfiles.StaticFilesPanel',
 )
 
+#SESSION_ENGINE = ''
+
 REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': [
     #     'rest_framework.permissions.IsAuthenticated',
@@ -134,6 +137,8 @@ REST_FRAMEWORK = {
     #     'rest_framework.authentication.BasicAuthentication',
     # ],
 }
+
+CSRF_USE_SESSIONS = True
 
 # SITE_ID = 1
 

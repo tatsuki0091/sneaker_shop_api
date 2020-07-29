@@ -1,7 +1,7 @@
 from rest_framework import serializers
 import datetime
 from members.models import Member
-import logging
+
 
 # パスワードハッシュ化のためのライブラリ
 from django.contrib.auth.hashers import make_password
@@ -46,7 +46,7 @@ class MemberAuthSerializer(serializers.Serializer):
     mail_address = serializers.EmailField()
     password = serializers.CharField(max_length=200)
 
-class GetMemberInfoSerializer(serializers.Serializer):
+class GetMemberInfoAndUpdateSerializer(serializers.Serializer):
     first_name = serializers.CharField(max_length=200)
     last_name = serializers.CharField(max_length=200)
     mail_address = serializers.EmailField()

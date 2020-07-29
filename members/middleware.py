@@ -23,4 +23,9 @@ class SampleMiddleware(object):
         
     
     def process_response(self, request, response):
+        # logfile = r"/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/development.log"
+        # logging.basicConfig(filename=logfile, level=logging.DEBUG)
+        # logging.info(request)
+        # logging.info(request.session.get('user_id'))
+        # print(request.session.get('user_id'))
         print("レスポンス")
