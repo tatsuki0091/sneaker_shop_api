@@ -3,6 +3,7 @@ from rest_framework import generics
 from carts.models import Cart
 from members.models import Member
 from .serializers import AddToCartSerializer
+from .serializers import SelectCartSerializer
 from rest_framework.response import Response
 import logging
 from products.models import Product
@@ -33,4 +34,20 @@ class AddToCartAPIView(generics.ListCreateAPIView):
         cart.save()
     
         return Response(True, status=status.HTTP_200_OK)
+
         
+class IndexAPIView(generics.ListAPIView):
+    logfile = r"/Users/Tatsuki/projects/django/book_shop_api/book_shop_api/development.log"
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
+    queryset = Cart.objects.select_related('member').filter()
+
+    logging.info('heyheyhey')
+    serializer_class = SelectCartSerializer
+    logging.info(queryset)
+    #logging.info(queryset.product)
+
+    #serializer_class = SelectCartSerializer
+    #serializer_class = ModelSerializer
+    
+    
+    # logging.info(serializer_class)
